@@ -71,5 +71,5 @@ void Character::unequip(int idx)
 void Character::use(int idx, ICharacter& target)
 {
 	if (_inventory[idx] != 0)
-		_inventory[idx]->use(target);
+		_inventory[idx]->AMateria::use(target);
 }
