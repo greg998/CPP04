@@ -6,25 +6,24 @@
 #    By: ggiquiau <ggiquiau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/04 13:08:22 by ggiquiau          #+#    #+#              #
-#    Updated: 2022/04/06 13:01:37 by ggiquiau         ###   ########.fr        #
+#    Updated: 2022/04/06 16:54:40 by ggiquiau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS			= Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp main.cpp
+SRCS			= AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp main.cpp
 					
 OBJS            = ${SRCS:%.cpp=${OBJS_DIR}/%.o}
 
 OBJS_DIR		= objs
 
-
-HEADERS			= Animal.hpp WrongAnimal.hpp Dog.hpp Cat.hpp WrongCat.hpp
+HEADERS			= AMateria.hpp Character.hpp Cure.hpp Ice.hpp ICharacter.hpp IMateriaSource.hpp
 
 CXX  			=  c++
 
 CXXFLAGS		= -Wall -Wextra -Werror -std=c++98 -g3
 
 
-NAME 			= animal
+NAME 			= materia
 
 RM 				= rm -f
 

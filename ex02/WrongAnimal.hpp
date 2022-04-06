@@ -12,7 +12,7 @@ public:
 	WrongAnimal();
 	WrongAnimal(std::string type);
 	WrongAnimal(const WrongAnimal &src);
-	virtual ~WrongAnimal();
+	~WrongAnimal();
 
 	WrongAnimal	&operator=(const WrongAnimal &rhs);
 

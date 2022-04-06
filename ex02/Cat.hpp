@@ -2,9 +2,13 @@
 # define CAT_HPP
 
 # include "Animal.hpp"
+# include "Brain.hpp"
 
 class Cat: public Animal
 {
+private:
+	Brain	*_brain;
+
 public:
 	Cat();
 	Cat(const Cat &src);
@@ -12,7 +16,7 @@ public:
 
 	Cat	&operator=(const Cat &rhs);
 
-	void	virtual makeSound(void) const;
+	virtual void	makeSound(void) const;
 };
 
 #endif

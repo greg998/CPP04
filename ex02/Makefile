@@ -6,22 +6,22 @@
 #    By: ggiquiau <ggiquiau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/04 13:08:22 by ggiquiau          #+#    #+#              #
-#    Updated: 2022/04/06 13:01:37 by ggiquiau         ###   ########.fr        #
+#    Updated: 2022/04/06 11:55:24 by ggiquiau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS			= Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp main.cpp
+SRCS			= Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp main.cpp
 					
 OBJS            = ${SRCS:%.cpp=${OBJS_DIR}/%.o}
 
 OBJS_DIR		= objs
 
 
-HEADERS			= Animal.hpp WrongAnimal.hpp Dog.hpp Cat.hpp WrongCat.hpp
+HEADERS			= Animal.hpp WrongAnimal.hpp Dog.hpp Cat.hpp WrongCat.hpp Brain.hpp
 
 CXX  			=  c++
 
-CXXFLAGS		= -Wall -Wextra -Werror -std=c++98 -g3
+CXXFLAGS		= -Wall -Wextra -Werror -std=c++98
 
 
 NAME 			= animal
