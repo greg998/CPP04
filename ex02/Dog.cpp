@@ -5,6 +5,7 @@ Dog::Dog()
 	, _brain (new Brain())
 {
 	std::cout << "Dog default constructor called" << std::endl;
+	fillIdeas("bones");
 }
 
 Dog::Dog(const Dog &src)

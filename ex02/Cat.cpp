@@ -5,6 +5,7 @@ Cat::Cat()
 	, _brain (new Brain())
 {
 	std::cout << "Cat default constructor called" << std::endl;
+	fillIdeas("fish");
 }
 
 Cat::Cat(const Cat &src)

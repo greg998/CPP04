@@ -6,7 +6,7 @@
 #    By: ggiquiau <ggiquiau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/04 13:08:22 by ggiquiau          #+#    #+#              #
-#    Updated: 2022/04/06 13:01:37 by ggiquiau         ###   ########.fr        #
+#    Updated: 2022/04/19 18:02:01 by ggiquiau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ HEADERS			= Animal.hpp WrongAnimal.hpp Dog.hpp Cat.hpp WrongCat.hpp
 
 CXX  			=  c++
 
-CXXFLAGS		= -Wall -Wextra -Werror -std=c++98 -g3
+CXXFLAGS		= -Wall -Wextra -Werror -std=c++98
 
 
 NAME 			= animal
