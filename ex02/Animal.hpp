@@ -19,6 +19,7 @@ public:
 	const std::string	&getType() const;
 
 	virtual void	makeSound(void) const = 0;
+	virtual void	displayIdeas(void) const = 0;
 };
 
 #endif

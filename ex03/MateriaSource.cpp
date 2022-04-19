@@ -35,13 +35,14 @@ void		MateriaSource::learnMateria(AMateria *m)
 	{
 		int	i(0);
 
-		while (_materiaBook[i] != 0)
+		while (i < 4 && _materiaBook[i] != 0)
 			i++;
 		if (i < 4)
 		{
-			delete _materiaBook[i];
 			_materiaBook[i] = m;
 		}
+		else
+			delete m;
 	}
 }
 

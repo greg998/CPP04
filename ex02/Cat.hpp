@@ -17,6 +17,9 @@ public:
 	Cat	&operator=(const Cat &rhs);
 
 	virtual void	makeSound(void) const;
+	void	fillIdeas(const std::string &s);
+	virtual	void	displayIdeas(void) const;
+	void	setBrain(int i, const std::string &s);
 };
 
 #endif

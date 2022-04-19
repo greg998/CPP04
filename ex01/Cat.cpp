@@ -5,6 +5,7 @@ Cat::Cat()
 	, _brain (new Brain())
 {
 	std::cout << "Cat default constructor called" << std::endl;
+	fillIdeas("fish");
 }
 
 Cat::Cat(const Cat &src)
@@ -34,5 +35,26 @@ Cat	&Cat::operator=(const Cat &rhs)
 
 void	Cat::makeSound(void) const
 {
-	std::cout << "Miaou" << std::endl;
+	std::cout << "Miaouuuuuu" << std::endl;
+}
+
+void	Cat::fillIdeas(const std::string &s)
+{
+	for (int i = 0; i < 100; ++i)
+		(*_brain)[i] = s;
+}
+
+void	Cat::displayIdeas(void) const
+{
+	if (_brain)
+	{
+		for (int  i = 0; i < 100; ++i)
+			std::cout << (*_brain)[i] << " ";
+		std::cout << std::endl;
+	}
+}
+
+void	Cat::setBrain(int i, const std::string &s)
+{
+	(*_brain)[i] = s;
 }

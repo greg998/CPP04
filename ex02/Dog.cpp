@@ -34,5 +34,26 @@ Dog	&Dog::operator=(const Dog &rhs)
 
 void	Dog::makeSound(void) const
 {
-	std::cout << "Ouaf" << std::endl;
+	std::cout << "Ouaaaaffff" << std::endl;
+}
+
+void	Dog::fillIdeas(const std::string &s)
+{
+	for (int i = 0; i < 100; ++i)
+		(*_brain)[i] = s;
+}
+
+void	Dog::displayIdeas(void) const
+{
+	if (_brain)
+	{
+		for (int  i = 0; i < 100; ++i)
+			std::cout << (*_brain)[i] << " ";
+		std::cout << std::endl;
+	}
+}
+
+void	Dog::setBrain(int i, const std::string &s)
+{
+	(*_brain)[i] = s;
 }

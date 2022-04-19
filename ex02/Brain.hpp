@@ -12,8 +12,9 @@ public:
 	Brain(const Brain &src);
 	~Brain();
 
-	Brain &operator=(const Brain &rhs);
-
+	Brain		&operator=(const Brain &rhs);
+	std::string	operator[](int index) const;
+	std::string	&operator[](int index);
 };
 
 #endif

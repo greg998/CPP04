@@ -56,7 +56,7 @@ void Character::equip(AMateria* m)
 {
 	int	i (0);
 
-	while (_inventory[i] != 0)
+	while (i < 4 &&_inventory[i] != 0)
 		i++;
 	if (i < 4)
 		_inventory[i] = m;
@@ -70,6 +70,6 @@ void Character::unequip(int idx)
 
 void Character::use(int idx, ICharacter& target)
 {
-	if (_inventory[idx] != 0)
+	if (idx >= 0 && idx < 4 && _inventory[idx] != 0)
 		_inventory[idx]->AMateria::use(target);
 }

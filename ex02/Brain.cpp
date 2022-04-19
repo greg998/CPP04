@@ -22,3 +22,13 @@ Brain &Brain::operator=(const Brain &rhs)
 		_ideas[i] = rhs._ideas[i];
 	return (*this);
 }
+
+std::string Brain::operator[](int index) const
+{
+	return (_ideas[index]);
+}
+
+std::string &Brain::operator[](int index)
+{
+	return (_ideas[index]);
+}
